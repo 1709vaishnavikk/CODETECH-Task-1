@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class calculator {
+    static int add(int a,int b){
+        return a+b;
+    }
+    static int sub(int a,int b){
+        return a-b;
+    }
+    static int multiply(int a,int b){
+        return a*b;
+    }
+    static int divide(int a,int b){
+        return a/b;
+    }
+          public static void main(String[] args) {
+        Scanner r=new Scanner(System.in);
+        System.out.println("Welcome to Calculator \n 1)Addition \n2)Subtraction \n3)Multiplication\n4)Division");
+        System.out.println("Enter your choice");
+        int ch=r.nextInt();
+        System.out.println("Enter two numbers");
+        int a=r.nextInt();
+        int b=r.nextInt();
+        switch(ch){
+            case 1:
+            System.out.println("Adition is:"+ calculator.add(a,b));
+            break;
+            case 2:
+            System.out.println("Subtraction is:"+ calculator.sub(a,b));
+            break;
+            case 3:
+            System.out.println("Multiplication is:"+ calculator.multiply(a,b));
+            break;
+            case 4:
+            System.out.println("Division is:"+ calculator.divide(a,b));
+            break;
+            default:
+            System.out.println("Invalid choice");
+        }
+
+        
+
+        
+    }
+
+    
+}
